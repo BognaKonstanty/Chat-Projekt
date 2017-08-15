@@ -1,7 +1,7 @@
 import React, { Component } from 'react';
 import io from 'socket.io-client';
 
-const socket = io('/');
+const socket = io('http://localhost:3000');
 
 import styles from './App.css';
 
@@ -17,7 +17,7 @@ class App extends Component {
   	}
 
   	componentDidMount() {
-  		socket.on('message', message => this.messageRecieve(message));
+  		socket.on('message', message => this.messageReceive(message));
   		socket.on('update', ({users}) => this.chatUpdate(users));
 	}
 
