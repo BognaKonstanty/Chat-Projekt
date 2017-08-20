@@ -27,6 +27,7 @@ plugins.push(
 
 
 module.exports = {
+    target: "web",
     entry: [
             'react-hot-loader/patch',
             'webpack-dev-server/client?http://localhost:8080',
@@ -57,17 +58,7 @@ module.exports = {
     		}
 		]
     },
-    plugins: [
-                new HtmlWebpackPlugin({
-                template: './client/index.html',
-                filename: 'index.html',
-                inject: 'body'
-   }),
-        new webpack.optimize.UglifyJsPlugin(),
-        new OptimizeJsPlugin({sourceMap: false})
-        
-    ]
-
-   
+    
+    plugins: plugins
 
 };
