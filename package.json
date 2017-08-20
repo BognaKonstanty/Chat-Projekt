@@ -6,7 +6,7 @@
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
     "build": "NODE_ENV=production webpack",
-    "start": "webpack-dev-server --config ./webpack.config.js"
+    "start": "webpack-dev-server --config ./webpack.config.js --hot"
   },
   "keywords": [],
   "author": "",
@@ -24,13 +24,13 @@
     "optimize-js-plugin": "0.0.4",
     "react": "^15.6.1",
     "react-dom": "^15.6.1",
-    "react-hot-loader": "^3.0.0-beta.6",
+    "react-hot-loader": "^3.0.0-beta.7",
     "socket.io": "^2.0.3",
     "socket.io-client": "^2.0.3",
     "style-loader": "^0.18.2",
     "webpack": "^3.4.1"
   },
   "devDependencies": {
-    "webpack-dev-server": "^2.6.1"
+    "webpack-dev-server": "^2.7.1"
   }
 }
